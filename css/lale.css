@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+body {
+    height: 100%;
+    font-family: sans-serif;
+    background-attachment: fixed;
+    
+}
+.main {
+    height: 99%;
+}
+.menus {
+    margin-top: 3vh;
+    width: 10%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.menus a button {
+    margin-bottom: 2vh;
+    width: 95%;
+    padding: 13px;
+    background-color: rgba(255, 255, 255, 0.5) ;
+    text-decoration: none;
+    border-radius: 0 20px 20px 0;
+    border: 0px solid beige;
+    box-shadow: 1px 1px 2px black;
+}
+.wrapper {
+    width: 80%;
+    margin: auto;
+}
+.top {
+    border-radius: 20px;
+    height: 30vh;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    background-image: linear-gradient(to bottom right, #2abac5,#1b3e6f, #1d2335); 
+}
+.top div {
+    color: white;
+    padding: 3rem;
+    position: relative;
+    width: 100%;   
+}
+.att-box1 ul {
+    list-style: none;
+}
+.att-box2 a {
+    text-decoration: none;
+}
+.atts{
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px black;
+}
+.att-pics {
+    width: 10%;
+}
+.atts p {
+    margin-left: 10px;
+    color: black;
+}
+.att-pics img {
+    width: 100%;
+    border-radius: 5px;
+}
+.java {
+    position: absolute;
+    width: 20%;
+    z-index: 1;
+    right: 20%;
+    bottom: 0;
+}
+details {
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px black;
+}
+summary {
+    list-style: none;
+}
+.h1 {
+    font-size: 2rem ;
+    color: #2962ffc8;
+}
+.container {
+    display: flex;
+}
+.container div {
+    width: 45%;
+    margin: auto;
+}
+.box1 {
+    color: black;
+}
+.box2 img {
+    width: 100%;
+}
+
+
+details:hover {
+    background-color: #e8f0fe;
+}
+.menus a button:hover {
+    background-color: #eeee;
+}
+
+details {
+    padding: 10px;
+}
+  
+details summary {
+cursor: pointer;
+transition: 500ms ease-out;
+}
+
+details[open] summary {
+    margin-bottom: 10px;
+}
