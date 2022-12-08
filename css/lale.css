@@ -101,6 +101,21 @@ body {
     right: 20%;
     bottom: 0;
 }
+.hdiv {
+    width: 100px;
+}
+.hlink {
+    text-decoration: none;
+}
+.home-butt {
+    padding: 15px;
+    border-radius: 10px;
+    border: 0px solid black;
+    box-shadow: 1px 1px 3px black;
+    cursor: pointer;
+    background-color: white;
+    display: none;
+}
 details {
     padding: 15px;
     border-radius: 10px;
@@ -119,17 +134,20 @@ summary {
 .layout20 {
     flex-direction: column;
 }
-.container .box1 {
+.box1 {
     width: 45%;
     margin: auto;
 }
-.container .box2 {
+.box2 {
     width: 45%;
     margin: auto;
 }
 .layout2 {
     display: flex;
     width: 90%;
+}
+.layout2 img{
+    width: 100%;    
 }
 .box1 {
     color: black;
@@ -142,6 +160,9 @@ summary {
 }
 
 
+.home-butt:hover {
+    background-color: #eeee;
+}
 details:hover {
     background-color: #e8f0fe;
 }
@@ -160,4 +181,46 @@ transition: 500ms ease-out;
 
 details[open] summary {
     margin-bottom: 10px;
+}
+
+.gt {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+}
+.gt a .h1 {
+    font-size: 1rem;
+}
+
+
+@media (max-width: 760px) {
+    .h1 {
+        font-size: 1.5rem;
+    }
+    .menus {
+        display: none;
+    }
+    .wrapper {
+        width: 95vw;
+    }
+    .home-butt {
+        display: block;
+    }
+    .other-pics {
+        width: calc(100%/3);
+        margin: 10px;
+    }
+    .box1 img {
+        display: none;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+    .box1 {
+        width: 100%;
+    }
+    .box2 {
+        width: 100%;
+    }
 }
